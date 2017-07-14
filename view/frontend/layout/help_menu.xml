@@ -1,0 +1,34 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * Copyright © 2013-2017 Magento, Inc. All rights reserved.
+ * See COPYING.txt for license details.
+ */
+-->
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" layout="2columns-left" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd" label="Customer My Account (All Pages)" design_abstraction="custom">
+    <body>
+        <attribute name="class" value="help"/>
+        <referenceContainer name="sidebar.main">
+            <block class="Magento\Framework\View\Element\Html\Links" name="help_navigation" before="-" template="Pengo_Help::navigation.phtml">
+                <block class="Magento\Framework\View\Element\Html\Link\Current" name="help-howitworks-navigation-account-link">
+                    <arguments>
+                        <argument name="label" xsi:type="string" translate="true">How it works</argument>
+                        <argument name="path" xsi:type="string">help/section/howitworks</argument>
+                    </arguments>
+                </block>
+                <block class="Magento\Framework\View\Element\Html\Link\Current" name="help-faq-navigation-account-edit-link">
+                    <arguments>
+                        <argument name="label" xsi:type="string" translate="true">Frequently Asked Questions</argument>
+                        <argument name="path" xsi:type="string">help/section/faq</argument>
+                    </arguments>
+                </block>
+                <block class="Magento\Framework\View\Element\Html\Link\Current" name="help-locations-navigation-address-link">
+                    <arguments>
+                        <argument name="label" xsi:type="string" translate="true">Zipcodes and Locations with Service</argument>
+                        <argument name="path" xsi:type="string">help/section/locations</argument>
+                    </arguments>
+                </block>
+            </block>
+        </referenceContainer>
+    </body>
+</page>
