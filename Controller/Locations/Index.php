@@ -1,11 +1,6 @@
 <?php
 
-/**
- *
- * Copyright © 2016 Magento. All rights reserved.
- * See COPYING.txt for license details.
- */
-namespace Pengo\Help\Controller\Section;
+namespace Pengo\Help\Controller\Locations;
 
 class Index extends \Magento\Framework\App\Action\Action
 {
@@ -32,16 +27,11 @@ class Index extends \Magento\Framework\App\Action\Action
     public function execute()
     {
 
-        //$from   = $this->getRequest()->getParam('from', 'USD');
-
         $page = $this->pageFactory->create();
         $page->getConfig()->getTitle()->set(__("Help"));
-        
-        $page->getLayout()->getBlock('converter.result');
-          //->setFromCurrency($from)
-          //->setToCurrency($to)
-          //->setAmount($amount)
-          //->setResultAmount($result);
+
+        $page->getLayout()->getBlock('help.view')
+            ->setSectionTitle(__("Zipcodes and Locations with Service"));
 
         return $page;
     }

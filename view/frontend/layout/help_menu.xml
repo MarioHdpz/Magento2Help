@@ -13,19 +13,19 @@
                 <block class="Magento\Framework\View\Element\Html\Link\Current" name="help-howitworks-navigation-account-link">
                     <arguments>
                         <argument name="label" xsi:type="string" translate="true">How it works</argument>
-                        <argument name="path" xsi:type="string">help/section/howitworks</argument>
+                        <argument name="path" xsi:type="string">help/howitworks</argument>
                     </arguments>
                 </block>
                 <block class="Magento\Framework\View\Element\Html\Link\Current" name="help-faq-navigation-account-edit-link">
                     <arguments>
                         <argument name="label" xsi:type="string" translate="true">Frequently Asked Questions</argument>
-                        <argument name="path" xsi:type="string">help/section/faq</argument>
+                        <argument name="path" xsi:type="string">help/faq</argument>
                     </arguments>
                 </block>
                 <block class="Magento\Framework\View\Element\Html\Link\Current" name="help-locations-navigation-address-link">
                     <arguments>
                         <argument name="label" xsi:type="string" translate="true">Zipcodes and Locations with Service</argument>
-                        <argument name="path" xsi:type="string">help/section/locations</argument>
+                        <argument name="path" xsi:type="string">help/locations</argument>
                     </arguments>
                 </block>
             </block>
